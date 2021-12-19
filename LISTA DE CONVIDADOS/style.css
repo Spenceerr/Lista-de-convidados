@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(182,11,124,1) 35%, rgba(0,212,255,1) 65%);
+}
+h1 {
+    margin-left: 95px;
+    color: red;
+}
+
+#botao-adicionar {
+    background: rgb(38, 38, 235);
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    padding: 0 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+#botao-adicionar:hover {
+    opacity:0.7;
+}
+#botao-adicionar:active {
+    opacity: 0.5;
+}
+
+
+.container {
+    background: white;
+    width: 541px;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+
+#input-principal {
+    font-size: 15px;
+    width: 342px;
+    height: 40px;
+    border: 2px solid rgba(156, 158, 158, 0.575);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#pessoas {
+    width: 100%;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.pessoa {
+    border-radius: 5px;
+    background: #F2F2F2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 40px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    
+}
+
+.nome-pessoa {
+    color: #000000;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.botao-confirmado {
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    cursor:pointer;
+    color: rgb(6, 231, 6);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.botao-nao-confirmado {
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 15;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    cursor:pointer;
+    color: red;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.botao-apagar {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    color: red;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.pessoa:hover .botao-confirmado {
+    opacity: 1;
+}
+
+.pessoa:hover .botao-nao-confirmado {
+    opacity: 1;
+}
+
+.pessoa:hover .botao-apagar {
+    opacity: 1;
+}
+
+.confirmado {
+    background-color: #d4f88d;
+}
+
+.naoConfirmado {
+    background-color: rgb(235, 116, 116);
+}
+
+#botao-limpar {
+    background: white;
+    cursor: pointer;
+}
+
+#back-to-top {
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 3px 3px 10px #333;
+  }
+
+  #back-to-top:hover {
+    opacity:0.8;
+}
